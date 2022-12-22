@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217deg, 54%, 11%);
+  font-size: 18px;
+}
+
+/*-- main --*/
+.card {
+  width: 330px;
+  height: 546px;
+  margin: 60px auto;
+  border-radius: 16px;
+  padding: 26px;
+  background-color: hsl(216deg, 50%, 16%);
+}
+.card__image {
+  background-image: url(../images/image-equilibrium.jpg);
+  background-size: cover;
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-bottom: 26px;
+  overflow: hidden;
+}
+.card__image-icon {
+  opacity: 0;
+  background-color: hsla(178deg, 100%, 50%, 0.5);
+  background-image: url(../images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+.card__image-icon:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.card__title {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.3em;
+  margin-bottom: 18px;
+}
+.card__title:hover {
+  cursor: pointer;
+  color: hsl(178deg, 100%, 50%);
+}
+.card__description {
+  font-size: 0.9em;
+  font-weight: 300;
+  color: hsl(215deg, 51%, 70%);
+  margin-bottom: 18px;
+}
+.card__details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+.card__price {
+  color: hsl(178deg, 100%, 50%);
+  display: flex;
+  gap: 10px;
+}
+.card__time {
+  color: hsl(215deg, 51%, 70%);
+  gap: 10px;
+}
+.card__line {
+  border-top: 1px solid hsl(215deg, 51%, 70%);
+  margin-bottom: 18px;
+}
+.card__creator-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.card__creator-container__avatar {
+  background-image: url(../images/image-avatar.png);
+  background-position: center;
+  background-size: cover;
+  width: 36px;
+  height: 36px;
+  border-radius: 50px;
+  border: 1px solid hsl(0deg, 0%, 100%);
+}
+.card__creator-container__name {
+  color: hsl(215deg, 51%, 70%);
+  font-size: 0.85em;
+  font-weight: 300;
+}
+.card__creator-container__name span {
+  color: hsl(0deg, 0%, 100%);
+}
+.card__creator-container__name span:hover {
+  cursor: pointer;
+  color: hsl(178deg, 100%, 50%);
+}
+
+/*-- footer --*/
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+}
+.attribution a {
+  color: hsl(215deg, 51%, 70%);
+}/*# sourceMappingURL=styles.css.map */
